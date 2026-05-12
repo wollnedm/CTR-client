@@ -40,11 +40,20 @@
   font-style: italic;
 }
 
-body{font-family: "Comic Neue", cursive;}
+body{font-family: "Comic Neue", cursive;
+color: #000000;
+background-color: #e6e6e6;}
 
 h1,h2,h3{font-family: "Indie Flower", cursive;}
 
 @media (min-width:450px){
+
+h4{color: #ffdf6a;}
+
+h3{color: #fbb03b;}
+
+p{background-color: #79AEDC;}
+
 
 
 }
