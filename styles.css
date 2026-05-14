@@ -41,19 +41,82 @@
 }
 
 body{font-family: "Comic Neue", cursive;
-color: #000000;
-background-color: #e6e6e6;}
+color: #000000;}
+
+main{background-color: #e6e6e6;
+margin: 1rem;}
 
 h1,h2,h3{font-family: "Indie Flower", cursive;}
 
 @media (min-width:450px){
 
+
 h4{color: #ffdf6a;}
 
-h3{color: #fbb03b;}
+h3{color: #fbb03b;
+font-size:24pt;
+text-align: center;
+padding: 0rem;}
 
-p{background-color: #79AEDC;}
+header>img{width: 200px;}
 
+header>h2{font-family: "Indie Flower", cursive;
+font-size: 32pt;
+color: #79AEDC;
+text-align: center;
+background-color: #ffdf6a;}
+
+header>nav>a{background-color: #fbb03b;
+color: #000000;
+text-decoration: none;
+padding: .2rem;
+font-family: "Indie Flower", cursive;
+font-size: 24pt;
+flex-wrap: wrap;}
+
+img{width:100%;
+padding: 1rem;}
+
+.quote{width: 100%;
+color: #fbb03b;
+font-weight: 600;
+background-color: transparent;
+padding: 0rem;
+text-align: center;}
+
+.indextable{display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+gap: .5rem;
+padding: 1rem;}
+
+.locations, .hours{background-color: #ffdf6a;
+text-align: center;}
+
+.locations>p, .hours>p{background-color: transparent;
+font-size: 14pt;}
+
+.indextable>h2{font-size: 24pt;}
+
+.paragraph{background-color: #79AEDC;
+padding: .5rem;}
+
+.paragraph>h4{font-weight: 600;
+padding: 0rem;}
+
+#cowlogo{width:40%;
+display: block;}
+
+footer{background-color: #79AEDC;
+display: flex;
+justify-content: space-around;
+padding: .2rem;}
+
+footer>a{text-decoration: none;
+color: #ffdf6a;
+font-size: 18pt;
+font-family: "Indie Flower", cursive;
+}
 
 
 }
