@@ -75,7 +75,7 @@ font-family: "Indie Flower", cursive;
 font-size: 24pt;
 flex-wrap: wrap;}
 
-img{width:100%;
+img{max-width:100%;
 padding: 1rem;}
 
 .quote{width: 100%;
@@ -103,7 +103,8 @@ font-size: 14pt;}
 padding: .5rem;}
 
 .paragraph>h4{font-weight: 600;
-padding: 0rem;}
+padding: 0rem;
+font-size: 14pt;}
 
 #cowlogo{width:40%;
 display: block;}
@@ -157,6 +158,14 @@ box-sizing:content-box;}
 background-color: #fbb03b;
 font-family: "Indie Flower", cursive;}
 
+.historypics>img{width:40%;
+flex-wrap: wrap;}
 
+.philtable{display: grid;
+grid-template-columns: 1fr 2fr;
+justify-content: center;
+gap:.5rem}
+
+.philtable>img{width:125px}
 
 }
