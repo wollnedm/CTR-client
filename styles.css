@@ -118,5 +118,15 @@ font-size: 18pt;
 font-family: "Indie Flower", cursive;
 }
 
+.comparison{display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+gap: .5rem;
+padding: 1rem;}
 
+.CTR, .corp{background-color:#79AEDC;
+text-align: center;;}
+
+.CTR>h4, .corp>h4{font-size: 16pt;
+padding: 0rem;}
 }
