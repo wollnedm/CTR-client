@@ -40,6 +40,8 @@
   font-style: italic;
 }
 
+h1{display:none}
+
 body{font-family: "Comic Neue", cursive;
 color: #000000;}
 
