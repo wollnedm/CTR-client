@@ -44,45 +44,72 @@ body{font-family: "Comic Neue", cursive;
 color: #000000;}
 
 main{background-color: #e6e6e6;
-margin: 1rem;}
+margin: 1rem;
+padding: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;}
 
 h1,h2,h3{font-family: "Indie Flower", cursive;}
 
 @media (min-width:450px){
 
-
-h4{color: #ffdf6a;}
+h4{color: #ffdf6a;
+margin:0rem}
 
 h3{color: #fbb03b;
 font-size:24pt;
 text-align: center;
-padding: 0rem;}
+margin: 0rem;}
 
-header>img{width: 200px;}
+header>img{width: 60px;}
 
-header>h2{font-family: "Indie Flower", cursive;
-font-size: 32pt;
+header{display: flex;
+flex-direction: column;
+align-items: center;
+padding: 1rem;}
+
+.title>h2{font-family: "Indie Flower", cursive;
+font-size: 28pt;
 color: #79AEDC;
 text-align: center;
 background-color: #ffdf6a;
-width:350px}
+margin:0;
+padding:10px 30px;
+max-width: 300px;
+width: auto;}
+
+nav{display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: .2rem;}
 
 header>nav>a{background-color: #fbb03b;
 color: #000000;
 text-decoration: none;
-padding: .2rem;
+min-width: 50px;
+padding: .5rem .5rem;
 font-family: "Indie Flower", cursive;
 font-size: 24pt;
-flex-wrap: wrap;}
+text-align: center;
+display: flex;}
 
-img{max-width:100%;
-padding: 1rem;}
+.title{display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+width: 100%;
+margin:20px 0}
+
+main>img{max-width: 90%;
+padding:1rem;
+display: block;}
 
 .quote{width: 100%;
 color: #fbb03b;
 font-weight: 600;
 background-color: transparent;
-padding: 0rem;
+margin: 0rem;
 text-align: center;}
 
 .indextable{display: grid;
@@ -100,7 +127,10 @@ font-size: 14pt;}
 .indextable>h2{font-size: 24pt;}
 
 .paragraph{background-color: #79AEDC;
-padding: .5rem;}
+padding: 1rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+width: 80%;}
 
 .paragraph>h4{font-weight: 600;
 padding: 0rem;
@@ -127,11 +157,13 @@ gap: .5rem;
 padding: 1rem;}
 
 .CTR, .corp{background-color:#79AEDC;
-text-align: center;;}
+text-align: center;
+padding:20px;
+padding-bottom:0px;
+padding-left:0px;}
 
 .CTR>h4, .corp>h4{font-size: 16pt;
 padding: 0rem;}
-
 
 .contactform{width: 70%;
 margin: 2rem auto;
@@ -161,11 +193,37 @@ font-family: "Indie Flower", cursive;}
 .historypics>img{width:40%;
 flex-wrap: wrap;}
 
-.philtable{display: grid;
+.philtable, .contacttable{display: grid;
 grid-template-columns: 1fr 2fr;
 justify-content: center;
-gap:.5rem}
+gap:.5rem;}
 
-.philtable>img{width:125px}
+.philtable>img{width:125px;
+display: flex;}
 
+table{width: 100%;
+border-spacing: 0 1rem;}
+
+td:first-child{width: 25%;
+background-color: white;
+padding: 1rem;
+text-align: center;}
+
+td>img{width: 100%;
+max-width: 400px;
+display: block;}
+
+.td2{background-color: #79AEDC;
+padding: 1rem;
+vertical-align: top;
+width: 75%;}
+
+.td2>h4{font-weight: 600;
+margin: 0rem;
+font-size: 14pt;}
+
+.contacttable>p{background-color: #79AEDC;
+padding: 1rem;}
+
+.contacttable>h2{align-content: center;}
 }
