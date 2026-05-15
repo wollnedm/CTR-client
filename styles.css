@@ -76,11 +76,10 @@ text-align: center;
 background-color: #ffdf6a;
 margin:0;
 padding:10px 30px;
-max-width: 300px;
 width: auto;}
 
 nav{display: flex;
-justify-content: center;
+align-items: center;
 flex-wrap: wrap;
 gap: .2rem;}
 
@@ -92,7 +91,8 @@ padding: .5rem .5rem;
 font-family: "Indie Flower", cursive;
 font-size: 24pt;
 text-align: center;
-display: flex;}
+display: flex;
+justify-content: space-evenly;}
 
 .title{display: flex;
 align-items: center;
@@ -190,7 +190,7 @@ box-sizing:content-box;}
 background-color: #fbb03b;
 font-family: "Indie Flower", cursive;}
 
-.historypics>img{width:40%;
+.historypics>img, .philpics>img{width:40%;
 flex-wrap: wrap;}
 
 .philtable, .contacttable{display: grid;
@@ -198,8 +198,8 @@ grid-template-columns: 1fr 2fr;
 justify-content: center;
 gap:.5rem;}
 
-.philtable>img{width:125px;
-display: flex;}
+.philtable>img{width:100%;
+padding:1rem;}
 
 table{width: 100%;
 border-spacing: 0 1rem;}
@@ -252,4 +252,47 @@ font-size: 14pt;}
 
 .shopgallery>img:hover{filter:brightness(20%);}
 
+}
+
+@media (min-width:1100px){
+
+.historypics>img{width:30%;
+flex-wrap: wrap;}
+
+.philpics>img{width:23%;}
+
+.philtable{display: grid;
+grid-template-columns: 1fr 4fr;
+justify-content: center;
+gap:.5rem;}
+
+.philtable>img{width: 100%;
+padding: 1rem;}
+
+.contacttable{display: grid;
+grid-template-columns: 1fr 3fr;
+justify-content: center;
+gap:.5rem;
+width:100%;}
+
+.contacttable>h2{font-size: 24pt;}
+
+.indextable{display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+gap: .5rem;
+padding: 1rem;
+width:100%}
+
+.paragraph{width: 90%;}
+
+.cowdiv{display: grid;
+grid-template-columns: 1fr 4fr;
+justify-content: center;
+gap:.5rem;}
+
+#cowlogo{width: 100%;
+padding: 1rem;}
+
+.comparison{width: 90%;}
 }
