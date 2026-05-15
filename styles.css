@@ -226,4 +226,30 @@ font-size: 14pt;}
 padding: 1rem;}
 
 .contacttable>h2{align-content: center;}
+
+.shopgallery{flex-wrap: wrap;
+background-color: #ffdf6a;
+justify-content: space-around;}
+
+.shopgallery>img{width:30%;
+max-height: 100px;
+max-width: 100px;
+min-width: 100px;
+min-height: 100px;
+padding: .5rem;}
+
+.options{display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: .2rem;}
+
+.options>h3{background-color: #fbb03b;
+color:#000000;
+padding: .5rem;
+font-size: 14pt;}
+
+.options>h3:hover{background-color: #79AEDC;}
+
+.shopgallery>img:hover{filter:brightness(20%);}
+
 }
